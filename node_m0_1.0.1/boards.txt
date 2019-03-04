@@ -1,0 +1,45 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+
+node_m0.name=MNSLAC Node M0
+node_m0.vid.0=0x239A
+node_m0.pid.0=0x800B
+node_m0.vid.1=0x239A
+node_m0.pid.1=0x000B
+node_m0.upload.tool=bossac
+node_m0.upload.protocol=sam-ba
+node_m0.upload.maximum_size=262144
+node_m0.upload.offset=0x2000
+node_m0.upload.use_1200bps_touch=true
+node_m0.upload.wait_for_upload_port=true
+node_m0.upload.native_usb=true
+node_m0.build.mcu=cortex-m0plus
+node_m0.build.f_cpu=48000000L
+node_m0.build.usb_product="NODE M0"
+node_m0.build.usb_manufacturer="MNSLAC"
+node_m0.build.board=SAMD_ZERO
+node_m0.build.core=arduino
+node_m0.build.extra_flags=-DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS  -Dnode_m0 -D__SAMD21G18A__ {build.usb_flags}
+node_m0.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+node_m0.build.openocdscript=openocd_scripts/arduino_zero.cfg
+node_m0.build.variant=node_m0
+node_m0.build.variant_system_lib=
+node_m0.build.vid=0x239A
+node_m0.build.pid=0x800B
+node_m0.bootloader.tool=openocd
+node_m0.bootloader.file=featherM0/bootloader-feather_m0-v2.0.0-adafruit.5.bin
