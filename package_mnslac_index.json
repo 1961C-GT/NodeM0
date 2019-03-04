@@ -119,7 +119,52 @@
                     "version": "1.0.1",
                     "category": "MNSLAC",
                     "url": "https://github.com/1961C-GT/NodeM0/raw/master/tar/node_m0_1.0.1.tar.bz2",
-                    "archiveFileName": "adafruit-samd-1.3.0.tar.bz2",
+                    "archiveFileName": "node_m0_1.0.1.tar.bz2",
+                    "checksum": "SHA-256:3bff37363ba7684d256526964323288275e12940612c56f966d71202c1c92a0c",
+                    "size": "2007601",
+                    "help": {
+                        "online": "https://mnslac.xtriage.com"
+                    },
+                    "boards": [
+                        {
+                            "name": "MNSLAC Node M0"
+                        }
+                    ],
+                    "toolsDependencies": [
+                        {
+                            "packager": "arduino",
+                            "name": "arm-none-eabi-gcc",
+                            "version": "4.8.3-2014q1"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "bossac",
+                            "version": "1.8.0-48-gb176eee"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "openocd",
+                            "version": "0.9.0-arduino"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS",
+                            "version": "4.5.0"
+                        },
+                        {
+                            "packager": "arduino",
+                            "name": "CMSIS-Atmel",
+                            "version": "1.2.0"
+                        }
+                    ]
+                },
+                {
+                    "name": "MNSLAC SAMD Boards",
+                    "architecture": "samd",
+                    "version": "1.0.2",
+                    "category": "MNSLAC",
+                    "url": "https://github.com/1961C-GT/NodeM0/raw/master/tar/node_m0_1.0.2.tar.bz2",
+                    "archiveFileName": "node_m0_1.0.2.tar.bz2",
                     "checksum": "SHA-256:3bff37363ba7684d256526964323288275e12940612c56f966d71202c1c92a0c",
                     "size": "2007601",
                     "help": {
