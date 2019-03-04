@@ -21,6 +21,7 @@
 
 // The definitions here needs a SAMD core >=1.6.10
 #define ARDUINO_SAMD_VARIANT_COMPLIANCE 10610
+#define MNSLAC_NODE_M0
 
 /*----------------------------------------------------------------------------
  *        Definitions
@@ -130,36 +131,6 @@ extern "C"
 #define PIN_SERIAL1_TX (1ul)
 #define PAD_SERIAL1_TX (UART_TX_PAD_2)
 #define PAD_SERIAL1_RX (SERCOM_RX_PAD_3)
-
-// /*
-//  * SPI Interfaces
-//  */
-// #define SPI_INTERFACES_COUNT 1
-
-// #define PIN_SPI_MISO         (21u)
-// #define PIN_SPI_MOSI         (19u)
-// #define PIN_SPI_SCK          (20u)
-// #define PERIPH_SPI           sercom4 // ALT
-// #define PAD_SPI_TX           SPI_PAD_2_SCK_3
-// #define PAD_SPI_RX           SERCOM_RX_PAD_0
-
-// static const uint8_t SS	  = PIN_A2 ;	// SERCOM4 last PAD is present on A2 but HW SS isn't used. Set here only for reference.
-// static const uint8_t MOSI = PIN_SPI_MOSI ;
-// static const uint8_t MISO = PIN_SPI_MISO ;
-// static const uint8_t SCK  = PIN_SPI_SCK ;
-
-// /*
-//  * Wire Interfaces
-//  */
-// #define WIRE_INTERFACES_COUNT 1
-
-// #define PIN_WIRE_SDA         (31u) // SERCOM3
-// #define PIN_WIRE_SCL         (32u) // SERCOM3
-// #define PERIPH_WIRE          sercom3
-// #define WIRE_IT_HANDLER      SERCOM3_Handler
-
-// static const uint8_t SDA = PIN_WIRE_SDA;
-// static const uint8_t SCL = PIN_WIRE_SCL;
 
 /*
  * SPI Interfaces

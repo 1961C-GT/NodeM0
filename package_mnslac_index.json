@@ -210,8 +210,8 @@
                     "category": "MNSLAC",
                     "url": "https://github.com/1961C-GT/NodeM0/raw/master/tar/node_m0_1.0.3.tar.bz2",
                     "archiveFileName": "node_m0_1.0.3.tar.bz2",
-                    "checksum": "SHA-256:7a3d691094d66c9e8ac2181cc696b2ba1345cf3e22f236db18ac19dc7a966ebc",
-                    "size": "1942095",
+                    "checksum": "SHA-256:0430481465c6aa5126be85f2c05c2eeb1ed529c0c59851d825e26246c9a92b5e",
+                    "size": "1942013",
                     "help": {
                         "online": "https://mnslac.xtriage.com"
                     },
