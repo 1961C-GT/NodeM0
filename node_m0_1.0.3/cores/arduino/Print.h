@@ -25,6 +25,42 @@
 #include "WString.h"
 #include "Printable.h"
 
+#define C_DEFAULT "\e[39m"
+#define C_BLACK "\e[30m"
+#define C_RED "\e[31m"
+#define C_GREEN "\e[32m"
+#define C_YELLOW "\e[33m"
+#define C_BLUE "\e[34m"
+#define C_PURPLE "\e[35m"
+#define C_CYAN "\e[36m"
+#define C_LGRAY "\e[37m"
+#define C_DGRAY "\e[90m"
+#define C_LRED "\e[91m"
+#define C_LGREEN "\e[92m"
+#define C_LYELLOW "\e[93m"
+#define C_LBLUE "\e[94m"
+#define C_LPURPLE "\e[95m"
+#define C_LCYAN "\e[96m"
+#define C_WHITE "\e[97m"
+
+#define BG_DEFAULT "\e[49m"
+#define BG_BLACK "\e[40m"
+#define BG_RED "\e[41m"
+#define BG_GREEN "\e[42m"
+#define BG_YELLOW "\e[43m"
+#define BG_BLUE "\e[44m"
+#define BG_PURPLE "\e[45m"
+#define BG_CYAN "\e[46m"
+#define BG_LGRAY "\e[47m"
+#define BG_DGRAY "\e[100m"
+#define BG_LRED "\e[101m"
+#define BG_LGREEN "\e[102m"
+#define BG_LYELLOW "\e[103m"
+#define BG_LBLUE "\e[104m"
+#define BG_LPURPLE "\e[105m"
+#define BG_LCYAN "\e[106m"
+#define BG_LWHITE "\e[107m"
+
 #define DEC 10
 #define HEX 16
 #define OCT 8
@@ -72,6 +108,8 @@ class Print
     size_t print(unsigned long, int = DEC);
     size_t print(double, int = 2);
     size_t print(const Printable&);
+    size_t cprint(const char[], const char[]);
+    size_t cprint(const char[], long);
 
     size_t println(const __FlashStringHelper *);
     size_t println(const String &s);
@@ -85,6 +123,9 @@ class Print
     size_t println(double, int = 2);
     size_t println(const Printable&);
     size_t println(void);
+
+    size_t cprintln(const char[], const char[]);
+    size_t cprintln(const char[], long);
 
     virtual void flush() { /* Empty implementation for backward compatibility */ }
 };
